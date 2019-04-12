@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context=".principal">
+
+    <ImageView
+        android:id="@+id/imgQR"
+        android:layout_marginTop="60dp"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logoproxy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Tu puerta de enlace al futuro"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textStyle="bold"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="20dp"
+        android:background="#E2E2E2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Seleccione una tarea a realizar:"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/Botoncillo"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="GenerarQR"
+        android:text="Crear QR"
+        android:drawableLeft="@drawable/crear_draw"
+        android:paddingLeft="@dimen/text_size_13sp"
+        android:background="@drawable/boton_redondo"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/btnLeer"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:onClick="LeerQR"
+        android:text="Leer QR"
+        android:drawableLeft="@drawable/lectura_draw"
+        android:paddingLeft="@dimen/text_size_13sp"
+        android:background="@drawable/boton_redondo"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Salir"
+        android:drawableLeft="@drawable/salir_draw"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:background="@drawable/boton_redondo"
+        android:onClick="Salir"
+        android:textColor="#ffffff"/>
+</LinearLayout>
